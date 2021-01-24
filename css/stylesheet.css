@@ -1,5 +1,5 @@
 @font-face {
-    font-family: 'NeueHaasUnicaW1G-Regular';
+    font-family: 'NeueHaasUnicaW1G-Regular', sans-serif;
     src: url('schrift/NeueHaasUnicaW1G-Regular.ttf') format('ttf'),
     font-weight: 500;
  }
@@ -43,8 +43,6 @@ body {
 	bottom: 15vh;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
-	align-content: space-between;
 	align-items: flex-start;
 	z-index: 100;
 	padding-right: 5px;
@@ -67,7 +65,6 @@ body {
 
 
 a:link, a:active, a:visited {
-
 	padding: 0;
 	text-decoration: none;
 	color: #000000;
