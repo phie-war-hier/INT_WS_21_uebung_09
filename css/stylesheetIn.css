@@ -1,0 +1,130 @@
+@font-face {
+    font-family: 'NeueHaasUnicaW1G-Regular';
+    src: url('schrift/NeueHaasUnicaW1G-Regular.ttf') format('ttf'),
+    font-weight: 500;
+ }
+
+
+body {
+	font-size: 15px;
+	margin: 0;
+}
+
+@media (max-width: 600px) {
+	body {
+		font-size: 14px;
+	}
+}
+
+
+.layout {
+	display: flex;
+	flex-direction: row;
+	align-items: stretch;
+}
+
+.layout-element-left {
+ 	min-width: 30vw;
+ 	padding: 5px;
+}
+
+.layout-element-right {
+ 	flex-grow: 1;
+ 	position: relative;
+ 	align-self: stretch;
+ 	
+ }
+
+.nav {
+	position: fixed;
+	bottom: 15vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-content: space-between;
+	align-items: flex-start;
+	z-index: 100;
+	padding-right: 5px;
+    margin-left: 2px;
+}
+
+.nav-element {
+	margin: 2px;
+}
+
+
+.out {
+	opacity: 0;
+}
+
+.titel {
+	position: fixed;
+	width: 30vw;
+	bottom: 20px;
+	z-index: 100;
+	padding-right: 5px;
+	margin-left: 2px;
+}
+
+
+
+a:link, a:active, a:visited {
+	padding: 0;
+	text-decoration: none;
+	color: #000000;
+}
+
+.nav-element a:hover {
+	opacity: 0;
+}
+
+.titel a:hover {
+	opacity: 0;
+}
+
+.info {
+	position: relative;
+	max-width: 30vw;
+	top: 10px;
+	padding-right: 5px;
+	margin-left: 2px;
+}
+
+.info a:hover {
+	opacity: 0;
+}
+
+@media (max-width: 600px) {
+	.info {
+		width: 100%;
+	}
+}
+
+p {
+		margin: 2px;
+		padding: 0;
+}
+
+.text {
+	padding-left: 15%;
+	margin-top: 10px;
+}
+
+
+.text img {
+	width: 85%;
+}
+
+.text p {
+	max-width: 85%;
+	margin-bottom: 15px;
+	margin-top: 10px;	
+}
+
+.bildunterschrift p {
+	margin-bottom: 100px;
+}
+
+.text a:hover {
+	opacity: 0;
+}

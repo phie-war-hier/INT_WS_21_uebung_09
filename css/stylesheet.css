@@ -1,0 +1,207 @@
+@font-face {
+    font-family: 'NeueHaasUnicaW1G-Regular';
+    src: url('schrift/NeueHaasUnicaW1G-Regular.ttf') format('ttf'),
+    font-weight: 500;
+ }
+
+
+body {
+	font-size: 15px;
+	margin: 0;
+ 
+}
+
+@media (max-width: 600px) {
+	body {
+		font-size: 14px;
+	}
+}
+
+.layout {
+	width: auto;
+	height: 100vh;
+	display: flex;
+	flex-direction: row;
+	align-items: stretch;
+}
+
+.layout-element-left {
+ 	min-width: 30vw;
+ 	padding: 5px;
+}
+
+.layout-element-right {
+ 	flex-grow: 1;
+ 	position: relative;
+ 	align-self: stretch;
+ 	
+ }
+
+
+.nav {
+	position: fixed;
+	bottom: 15vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-content: space-between;
+	align-items: flex-start;
+	z-index: 100;
+	padding-right: 5px;
+    margin-left: 2px;
+}
+
+.nav-element {
+	margin: 2px;
+}
+
+
+.titel {
+	position: fixed;
+	max-width: 30vw;
+	bottom: 20px;
+	z-index: 100;
+	padding-right: 5px;
+	margin-left: 2px;
+}
+
+
+a:link, a:active, a:visited {
+
+	padding: 0;
+	text-decoration: none;
+	color: #000000;
+}
+
+
+.nav-element a:hover {
+	opacity: 0;
+}
+
+.titel a:hover {
+	opacity: 0;
+}
+
+
+.info {
+	position: relative;
+	max-width: 30vw;
+	top: 3%;
+	padding-right: 5px;
+	margin-left: 2px;
+}
+
+@media (max-width: 600px) {
+	.info {
+		width: 100%;
+	}
+}
+
+p {
+		margin: 2px;
+		padding: 0;
+}
+
+
+.vorschau img {
+	width: 35%;
+	
+}
+
+.bild {
+	opacity: 0.2;
+	filter: blur(1.7px);
+}
+
+.bild:hover {
+	opacity: 1;
+	animation: bluring 6s ease;
+	z-index: 90;
+}
+
+.rahmen: hover {
+	opacity: 0;
+}
+
+
+@keyframes bluring {
+	0% { filter: blur(1.5px); opacity: 0.8;}
+	10% { filter: blur(0.1px); opacity: 1;}
+  	25% { filter: blur(0.1px);}
+   	50% { filter: blur(0.1px);}
+  	75% { filter: blur(0.1px);}
+ 	100% { filter: blur(0.1px);}
+}
+
+@keyframes vorne {
+	0% { filter: blur(1.7px); opacity: 0.3; z-index: 0;}
+	25% { filter: blur(1.5px); opacity: 0.8; z-index: 90;}
+	50% { filter: blur(0.1px); opacity: 0.90; z-index: 90;}
+	75% { filter: blur(1.5px); opacity: 0.8; z-index: 90;}
+	100% { filter: blur(1.7px); opacity: 0.3; z-index: 0;}
+}
+
+
+.element-2 img {
+	position: absolute;
+	z-index: 20;
+	right: 24%;
+	top: 56%;
+	animation: vorne 3s 2s linear 1;
+}
+
+.element-3 img {
+	position: absolute;
+	z-index: 60;
+	bottom: 3%;
+	right: 7%;
+	animation: vorne 3s 12s linear 1;
+}
+
+.element-4 img {
+	position: absolute;
+	z-index: 40;
+	top: 4%;
+	right: 13%;
+	animation: vorne 3s 22s linear 1;
+}
+
+.element-5 img {
+	position: absolute;
+	z-index: 50;
+	width: 25%;
+	height: auto;
+	left: 5%;
+	bottom: 3%;
+	animation: vorne 3s 32s linear 1;
+}
+
+.element-6 img {
+	position: absolute;
+	z-index: 30;
+	width: 20%;
+	height: auto;
+	top: 27%;
+	right: 50%;
+	animation: vorne 3s 42s linear 1;
+}
+
+.element-7 img {
+	position: absolute;
+	z-index: 70;
+	width: 30%;
+	height: auto;
+	top: 4%;
+	left: 0.5%;
+	animation: vorne 3s 52s linear 1;
+}
+
+.element-8 img {
+	position: absolute;
+	z-index: 80;
+	left: 37%;
+	top: 4.7%;
+	animation: vorne 3s 62s linear 1;
+}
+
+
