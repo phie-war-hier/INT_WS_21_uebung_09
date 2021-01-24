@@ -1,11 +1,12 @@
 @font-face {
-    font-family: 'NeueHaasUnicaW1G-Regular', sans-serif;
+    font-family: 'NeueHaasUnicaW1G-Regular';
     src: url('schrift/NeueHaasUnicaW1G-Regular.ttf') format('ttf'),
     font-weight: 500;
  }
 
 
 body {
+	font-family: NeueHaasUnicaW1G-Regular, sans serif;
 	font-size: 15px;
 	margin: 0;
 }
