@@ -1,12 +1,13 @@
 @font-face {
-    font-family: 'NeueHaasUnicaW1G-Regular';
-    src: url('schrift/NeueHaasUnicaW1G-Regular.ttf') format('ttf'),
+    font-family: 'RehnCondensed-Regular';
+    src: 	local('schrift/RehnCondensed-Regular.otf')
+    		url('schrift/RehnCondensed-Regular.otf') format('otf'),
     font-weight: 500;
  }
 
 
 body {
-	font-family: NeueHaasUnicaW1G-Regular, sans serif;
+	font-family: "RehnCondensed-Regular", Arial, sans-serif;
 	font-size: 15px;
 	margin: 0;
  
@@ -47,7 +48,7 @@ body {
 	align-items: flex-start;
 	z-index: 100;
 	padding-right: 5px;
-    margin-left: 2px;
+   	margin-left: 2px;
 }
 
 .nav-element {

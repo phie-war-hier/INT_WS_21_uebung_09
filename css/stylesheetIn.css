@@ -1,12 +1,13 @@
 @font-face {
-    font-family: 'NeueHaasUnicaW1G-Regular';
-    src: url('schrift/NeueHaasUnicaW1G-Regular.ttf') format('ttf'),
+    font-family: 'RehnCondensed-Regular';
+    src: 	local('schrift/RehnCondensed-Regular.otf')
+    		url('schrift/RehnCondensed-Regular.otf') format('otf'),
     font-weight: 500;
  }
 
 
 body {
-	font-family: NeueHaasUnicaW1G-Regular, sans serif;
+	font-family: "RehnCondensed-Regular", Arial, sans-serif;
 	font-size: 15px;
 	margin: 0;
 }
@@ -155,7 +156,7 @@ button {
   	border-radius: 0.2em;
 	margin: 2px;
 	padding: 2.7px 4px 0.5px 4px;
-	font-family: NeueHaasUnicaW1G-Regular, sans serif;
+
 	font-size: 15px;
 	color: #000000;
 	background-color: #ffffff;
@@ -209,7 +210,7 @@ a:focus {
   	border-radius: 2em;
 	margin: 2px;
 	padding: 2.7px 4px 0.5px 4px;
-	font-family: NeueHaasUnicaW1G-Regular, sans serif;
+	
 	font-size: 15px;
 	color: #000000;
 	background-color: #ffffff;
