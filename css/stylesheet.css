@@ -73,11 +73,31 @@ a:link, a:active, a:visited {
 
 
 .nav-element a:hover {
-	opacity: 0;
+	color: #ffffff;
+	background-color: #000000;
+	border: 0.1px solid #000000;
+  	border-radius: 0.2em;
+  	cursor: pointer;
+  	transition: all 0.25s ease;
+	padding: 2.7px 4px 0.5px 4px;
 }
 
 .titel a:hover {
-	opacity: 0;
+	color: #ffffff;
+	background-color: #000000;
+	border: 0.1px solid #000000;
+  	border-radius: 0.2em;
+  	cursor: pointer;
+  	transition: all 0.25s ease;
+	padding: 2.7px 4px 0.5px 4px;
+}
+
+a:focus {
+	color: #ffffff;
+	background-color: #000000;
+	border: 0.1px solid #000000;
+  	border-radius: 0.2em;
+  	cursor: pointer;
 }
 
 
@@ -107,7 +127,7 @@ p {
 }
 
 .bild {
-	opacity: 0.2;
+	opacity: 0;
 	filter: blur(1.7px);
 }
 
@@ -119,11 +139,12 @@ p {
 
 .rahmen: hover {
 	opacity: 0;
+	z-index: 0;
 }
 
 
 @keyframes bluring {
-	0% { filter: blur(1.5px); opacity: 0.8;}
+	0% { filter: blur(0.5px); opacity: 0.5;}
 	10% { filter: blur(0.1px); opacity: 1;}
   	25% { filter: blur(0.1px);}
    	50% { filter: blur(0.1px);}
@@ -131,13 +152,6 @@ p {
  	100% { filter: blur(0.1px);}
 }
 
-@keyframes vorne {
-	0% { filter: blur(1.7px); opacity: 0.3; z-index: 0;}
-	25% { filter: blur(1.5px); opacity: 0.8; z-index: 90;}
-	50% { filter: blur(0.1px); opacity: 0.90; z-index: 90;}
-	75% { filter: blur(1.5px); opacity: 0.8; z-index: 90;}
-	100% { filter: blur(1.7px); opacity: 0.3; z-index: 0;}
-}
 
 
 .element-2 img {
@@ -145,7 +159,6 @@ p {
 	z-index: 20;
 	right: 24%;
 	top: 56%;
-	animation: vorne 3s 2s linear 1;
 }
 
 .element-3 img {
@@ -153,7 +166,6 @@ p {
 	z-index: 60;
 	bottom: 3%;
 	right: 7%;
-	animation: vorne 3s 12s linear 1;
 }
 
 .element-4 img {
@@ -161,7 +173,6 @@ p {
 	z-index: 40;
 	top: 4%;
 	right: 13%;
-	animation: vorne 3s 22s linear 1;
 }
 
 .element-5 img {
@@ -171,7 +182,6 @@ p {
 	height: auto;
 	left: 5%;
 	bottom: 3%;
-	animation: vorne 3s 32s linear 1;
 }
 
 .element-6 img {
@@ -181,7 +191,6 @@ p {
 	height: auto;
 	top: 27%;
 	right: 50%;
-	animation: vorne 3s 42s linear 1;
 }
 
 .element-7 img {
@@ -191,15 +200,14 @@ p {
 	height: auto;
 	top: 4%;
 	left: 0.5%;
-	animation: vorne 3s 52s linear 1;
 }
 
 .element-8 img {
 	position: absolute;
 	z-index: 80;
+	width: 20%;
 	left: 37%;
 	top: 4.7%;
-	animation: vorne 3s 62s linear 1;
 }
 
 
@@ -215,7 +223,6 @@ p {
 	height: auto;
 	right: 24%;
 	top: 56%;
-	animation: vorne 3s 2s linear 1;
 }
 
 .element-3 img {
@@ -225,7 +232,6 @@ p {
 	height: auto;
 	bottom: 2%;
 	right: 12%;
-	animation: vorne 3s 12s linear 1;
 }
 
 .element-4 img {
@@ -235,7 +241,6 @@ p {
 	height: auto;
 	top: 4%;
 	right: 13%;
-	animation: vorne 3s 22s linear 1;
 }
 
 .element-5 img {
@@ -245,7 +250,6 @@ p {
 	height: auto;
 	left: 7%;
 	bottom: 14%;
-	animation: vorne 3s 32s linear 1;
 }
 
 .element-6 img {
@@ -255,7 +259,6 @@ p {
 	height: auto;
 	top: 27%;
 	right: 56%;
-	animation: vorne 3s 42s linear 1;
 }
 
 .element-7 img {
@@ -265,19 +268,16 @@ p {
 	height: auto;
 	top: 38%;
 	left: 53%;
-	animation: vorne 3s 52s linear 1;
 }
 
 .element-8 img {
 	position: absolute;
 	z-index: 80;
-	width: 45%;
+	width: 25%;
 	height: auto;
 	left: 27%;
 	top: 5%;
-	animation: vorne 3s 62s linear 1;
 }
-
 
 
 }

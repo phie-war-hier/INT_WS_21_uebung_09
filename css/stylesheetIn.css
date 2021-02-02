@@ -80,7 +80,13 @@ a:link, a:active, a:visited {
 }
 
 .titel a:hover {
-	opacity: 0;
+	color: #ffffff;
+	background-color: #000000;
+	border: 0.1px solid #000000;
+  	border-radius: 0.2em;
+  	cursor: pointer;
+  	transition: all 0.25s ease;
+	padding: 2.7px 4px 0.5px 4px;
 }
 
 .info {
@@ -89,10 +95,17 @@ a:link, a:active, a:visited {
 	top: 10px;
 	padding-right: 5px;
 	margin-left: 2px;
+	
 }
 
 .info a:hover {
-	opacity: 0;
+	color: #ffffff;
+	background-color: #000000;
+	border: 0.1px solid #000000;
+  	border-radius: 0.2em;
+  	cursor: pointer;
+  	transition: all 0.25s ease;
+	padding: 2.7px 4px 0.5px 4px;
 }
 
 @media (max-width: 600px) {
@@ -127,5 +140,77 @@ p {
 }
 
 .text a:hover {
-	opacity: 0;
+	color: #ffffff;
+	background-color: #000000;
+	border: 0.1px solid #000000;
+  	border-radius: 0.2em;
+  	cursor: pointer;
+  	transition: all 0.25s ease;
+	padding: 2.7px 4px 0.5px 4px;
+}
+
+
+button {
+	border: 0.1px solid #000000;
+  	border-radius: 0.2em;
+	margin: 2px;
+	padding: 2.7px 4px 0.5px 4px;
+	font-family: NeueHaasUnicaW1G-Regular, sans serif;
+	font-size: 15px;
+	color: #000000;
+	background-color: #ffffff;
+}
+
+
+
+
+button:hover {
+	color: #ffffff;
+	background-color: #000000;
+	border: 0.1px solid #000000;
+  	border-radius: 0.2em;
+  	cursor: pointer;
+}
+
+button:active {
+	color: #000000;
+	background-color: #ffffff;
+	border: 0.1px solid #000000;
+  	border-radius: 0.2em;
+  	color: #000000;
+	background-color: #ffffff;
+}
+
+button:focus {
+	color: #ffffff;
+	background-color: #000000;
+	border: 0.1px solid #000000;
+  	border-radius: 0.2em;
+  	cursor: pointer;
+}
+
+
+a:focus {
+	color: #ffffff;
+	background-color: #000000;
+	border: 0.1px solid #000000;
+  	border-radius: 0.2em;
+  	cursor: pointer;
+}
+
+.druckNav {
+	display: block;
+	margin-top: 5px;
+
+}
+
+.druckNav p {
+	border: 0.1px solid #ffffff;
+  	border-radius: 2em;
+	margin: 2px;
+	padding: 2.7px 4px 0.5px 4px;
+	font-family: NeueHaasUnicaW1G-Regular, sans serif;
+	font-size: 15px;
+	color: #000000;
+	background-color: #ffffff;
 }
